@@ -26,11 +26,6 @@ if __name__ == '__main__':
     parser.add_argument('--block-dropout', type=float, default=.1, help="Block dropout")
     parser.add_argument('--lr', type=float, default=.1, help="Learning rate")
     opt = parser.parse_args()
-
-
-    opt.img_size, opt.patch_size = 96, 16
-    opt.num_hiddens, opt.mlp_num_hiddens, opt.num_heads, opt.num_blocks = 512, 2048, 8, 2
-    opt.emb_dropout, opt.block_dropout, opt.lr = 0.1, 0.1, 0.1
     
     model = train(opt)
     save_model(model)
