@@ -15,7 +15,7 @@ Classic Transformer architecture as follow :
 * Normalization 2 
 * Multilayer processing with : 
     * Dense Layer 
-    * GELU activation function 
+    * GELU activation function (https://medium.com/@shauryagoel/gelu-gaussian-error-linear-unit-4ec59fb2e47c)
     * Dropout 
     * Dense Layer 
     * Dropout 
